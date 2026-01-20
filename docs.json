@@ -8,12 +8,13 @@
     "dark": "#15803D"
   },
   "favicon": "/favicon.svg",
-  "navigation": {
-    "pages": [
-      "account-setup",
-      "minecraft-server"
-    ]
-  },
+"navigation": {
+  "pages": [
+    "account-setup",
+    "minecraft-server"
+  ]
+}
+,
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
