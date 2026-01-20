@@ -1,0 +1,133 @@
+---
+title: Minecraft server help
+description: Guide to setting up and managing your Minecraft server
+---
+
+## Server setup
+
+### System requirements
+
+Before setting up your Minecraft server, ensure your system meets these requirements:
+
+- **RAM**: Minimum 2GB, recommended 4GB or more
+- **CPU**: Multi-core processor recommended
+- **Storage**: At least 1GB free space
+- **Java**: Java 17 or higher for Minecraft 1.18+
+
+### Installing the server
+
+1. Download the latest Minecraft server JAR file from the official website
+2. Create a new folder for your server files
+3. Place the server JAR file in the folder
+4. Run the server for the first time to generate configuration files
+5. Accept the EULA by editing `eula.txt` and setting `eula=true`
+
+```bash
+java -Xmx1024M -Xms1024M -jar server.jar nogui
+```
+
+## Server configuration
+
+### Basic settings
+
+Edit `server.properties` to configure your server:
+
+- **server-port**: Default is 25565
+- **gamemode**: survival, creative, adventure, or spectator
+- **difficulty**: peaceful, easy, normal, or hard
+- **max-players**: Maximum number of players allowed
+- **pvp**: Enable or disable player vs player combat
+- **spawn-protection**: Radius of spawn protection in blocks
+
+### Performance optimization
+
+Improve server performance with these settings:
+
+- **view-distance**: Reduce to 8-10 for better performance
+- **simulation-distance**: Controls how far away chunks are processed
+- **max-tick-time**: Prevents server watchdog from shutting down
+- **network-compression-threshold**: Compress packets larger than this value
+
+### Whitelist and permissions
+
+Control who can join your server:
+
+1. Enable whitelist in `server.properties`: `white-list=true`
+2. Add players: `/whitelist add <username>`
+3. Remove players: `/whitelist remove <username>`
+4. Make players operators: `/op <username>`
+
+## Managing your server
+
+### Starting and stopping
+
+Start your server:
+```bash
+java -Xmx2G -Xms2G -jar server.jar nogui
+```
+
+Stop your server safely:
+- Use the `/stop` command in the console
+- Never force-close the server to prevent corruption
+
+### Backups
+
+Regularly backup your server:
+
+1. Stop the server or use a backup plugin
+2. Copy the entire server folder to a safe location
+3. Include the `world` folder and all configuration files
+4. Schedule automatic backups for important servers
+
+### Plugins and mods
+
+Extend your server functionality:
+
+- **Bukkit/Spigot/Paper**: For plugins (recommended for most servers)
+- **Forge/Fabric**: For mods (requires client-side mods too)
+- Download plugins from trusted sources like SpigotMC or CurseForge
+- Place plugin JAR files in the `plugins` folder
+
+## Troubleshooting
+
+### Server won't start
+
+Common issues and solutions:
+
+- **Java version**: Ensure you have the correct Java version installed
+- **Port already in use**: Change the port in `server.properties`
+- **Insufficient memory**: Increase the `-Xmx` value in your start command
+- **Corrupted world**: Restore from a backup or delete the world folder
+
+### Connection issues
+
+If players can't connect:
+
+- **Firewall**: Open port 25565 (or your custom port)
+- **Port forwarding**: Configure your router to forward the server port
+- **IP address**: Share your public IP address with players
+- **Server full**: Increase `max-players` in server.properties
+
+### Performance problems
+
+If your server is lagging:
+
+- Reduce `view-distance` and `simulation-distance`
+- Use Paper or Purpur for better performance
+- Install optimization plugins like ClearLagg
+- Upgrade your server hardware or hosting plan
+- Limit entity spawning and redstone contraptions
+
+## Common commands
+
+Essential server commands:
+
+- `/whitelist add <player>`: Add player to whitelist
+- `/op <player>`: Give player operator permissions
+- `/gamemode <mode> <player>`: Change player's gamemode
+- `/tp <player> <target>`: Teleport players
+- `/give <player> <item> <amount>`: Give items to players
+- `/time set <value>`: Change the time of day
+- `/weather <clear|rain|thunder>`: Change weather
+- `/difficulty <level>`: Change difficulty
+- `/save-all`: Save the world manually
