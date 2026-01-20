@@ -1,0 +1,147 @@
+---
+title: Minecraft server help
+description: Guide to setting up and managing your Minecraft server
+---
+
+## Server setup
+
+### Prerequisites
+
+Before setting up your Minecraft server, ensure you have:
+
+- Java Runtime Environment (JRE) installed
+- At least 2GB of RAM available
+- A stable internet connection
+- Port forwarding access on your router
+
+### Installation steps
+
+1. Download the Minecraft server software from the official website
+2. Create a new folder for your server files
+3. Place the server `.jar` file in the folder
+4. Run the server for the first time to generate configuration files
+5. Accept the EULA by editing `eula.txt` and setting `eula=true`
+6. Start the server again
+
+```bash
+java -Xmx1024M -Xms1024M -jar minecraft_server.jar nogui
+```
+
+## Server configuration
+
+### Server properties
+
+Edit `server.properties` to configure your server:
+
+- **server-port**: Default is `25565`
+- **gamemode**: Set to `survival`, `creative`, `adventure`, or `spectator`
+- **difficulty**: Choose `peaceful`, `easy`, `normal`, or `hard`
+- **max-players**: Maximum number of players allowed
+- **pvp**: Enable or disable player vs player combat
+- **spawn-protection**: Radius of spawn protection in blocks
+- **white-list**: Enable whitelist mode for approved players only
+
+### Whitelist management
+
+To manage your server whitelist:
+
+```bash
+# Enable whitelist
+whitelist on
+
+# Add a player
+whitelist add <username>
+
+# Remove a player
+whitelist remove <username>
+
+# List whitelisted players
+whitelist list
+```
+
+### Operator permissions
+
+Grant operator permissions to trusted players:
+
+```bash
+# Make a player an operator
+op <username>
+
+# Remove operator status
+deop <username>
+```
+
+## Port forwarding
+
+To allow external players to connect:
+
+1. Access your router's admin panel
+2. Navigate to port forwarding settings
+3. Forward port `25565` (or your custom port) to your server's local IP
+4. Use TCP protocol
+5. Save the settings and restart your router
+
+## Connecting to your server
+
+### Local connection
+
+Players on the same network can connect using:
+- Your local IP address (e.g., `192.168.1.100`)
+- Or simply `localhost` if playing on the same machine
+
+### External connection
+
+Players outside your network need:
+- Your public IP address (find at whatismyip.com)
+- The server port (default: `25565`)
+- Format: `your.public.ip.address:25565`
+
+## Common issues
+
+### Server won't start
+
+If your server fails to start:
+
+- Check that Java is properly installed
+- Verify you accepted the EULA
+- Ensure the port isn't already in use
+- Check server logs for specific error messages
+
+### Players can't connect
+
+If players can't connect to your server:
+
+- Verify port forwarding is configured correctly
+- Check firewall settings aren't blocking the port
+- Confirm you're sharing the correct IP address
+- Ensure the server is running and not full
+
+### Performance issues
+
+To improve server performance:
+
+- Allocate more RAM using `-Xmx` and `-Xms` flags
+- Reduce view distance in `server.properties`
+- Limit the number of entities and mobs
+- Use server optimization plugins
+- Consider upgrading your hardware
+
+## Backup and maintenance
+
+### Creating backups
+
+Regularly backup your server:
+
+1. Stop the server
+2. Copy the entire server folder to a safe location
+3. Include the `world` folder and all configuration files
+4. Restart the server
+
+### Updating the server
+
+To update your Minecraft server:
+
+1. Backup your current server
+2. Download the latest server `.jar` file
+3. Replace the old `.jar` file with the new one
+4. Start the server and verify everything works
