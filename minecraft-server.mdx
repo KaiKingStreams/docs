@@ -5,143 +5,129 @@ description: Guide to setting up and managing your Minecraft server
 
 ## Server setup
 
-### Prerequisites
+### System requirements
 
-Before setting up your Minecraft server, ensure you have:
+Before setting up your Minecraft server, ensure your system meets these requirements:
 
-- Java Runtime Environment (JRE) installed
-- At least 2GB of RAM available
-- A stable internet connection
-- Port forwarding access on your router
+- **RAM**: Minimum 2GB, recommended 4GB or more
+- **CPU**: Multi-core processor recommended
+- **Storage**: At least 1GB free space
+- **Java**: Java 17 or higher for Minecraft 1.18+
 
-### Installation steps
+### Installing the server
 
-1. Download the Minecraft server software from the official website
+1. Download the latest Minecraft server JAR file from the official website
 2. Create a new folder for your server files
-3. Place the server `.jar` file in the folder
+3. Place the server JAR file in the folder
 4. Run the server for the first time to generate configuration files
 5. Accept the EULA by editing `eula.txt` and setting `eula=true`
-6. Start the server again
 
 ```bash
-java -Xmx1024M -Xms1024M -jar minecraft_server.jar nogui
+java -Xmx1024M -Xms1024M -jar server.jar nogui
 ```
 
 ## Server configuration
 
-### Server properties
+### Basic settings
 
 Edit `server.properties` to configure your server:
 
-- **server-port**: Default is `25565`
-- **gamemode**: Set to `survival`, `creative`, `adventure`, or `spectator`
-- **difficulty**: Choose `peaceful`, `easy`, `normal`, or `hard`
+- **server-port**: Default is 25565
+- **gamemode**: survival, creative, adventure, or spectator
+- **difficulty**: peaceful, easy, normal, or hard
 - **max-players**: Maximum number of players allowed
 - **pvp**: Enable or disable player vs player combat
 - **spawn-protection**: Radius of spawn protection in blocks
-- **white-list**: Enable whitelist mode for approved players only
 
-### Whitelist management
+### Performance optimization
 
-To manage your server whitelist:
+Improve server performance with these settings:
 
+- **view-distance**: Reduce to 8-10 for better performance
+- **simulation-distance**: Controls how far away chunks are processed
+- **max-tick-time**: Prevents server watchdog from shutting down
+- **network-compression-threshold**: Compress packets larger than this value
+
+### Whitelist and permissions
+
+Control who can join your server:
+
+1. Enable whitelist in `server.properties`: `white-list=true`
+2. Add players: `/whitelist add <username>`
+3. Remove players: `/whitelist remove <username>`
+4. Make players operators: `/op <username>`
+
+## Managing your server
+
+### Starting and stopping
+
+Start your server:
 ```bash
-# Enable whitelist
-whitelist on
-
-# Add a player
-whitelist add <username>
-
-# Remove a player
-whitelist remove <username>
-
-# List whitelisted players
-whitelist list
+java -Xmx2G -Xms2G -jar server.jar nogui
 ```
 
-### Operator permissions
+Stop your server safely:
+- Use the `/stop` command in the console
+- Never force-close the server to prevent corruption
 
-Grant operator permissions to trusted players:
-
-```bash
-# Make a player an operator
-op <username>
-
-# Remove operator status
-deop <username>
-```
-
-## Port forwarding
-
-To allow external players to connect:
-
-1. Access your router's admin panel
-2. Navigate to port forwarding settings
-3. Forward port `25565` (or your custom port) to your server's local IP
-4. Use TCP protocol
-5. Save the settings and restart your router
-
-## Connecting to your server
-
-### Local connection
-
-Players on the same network can connect using:
-- Your local IP address (e.g., `192.168.1.100`)
-- Or simply `localhost` if playing on the same machine
-
-### External connection
-
-Players outside your network need:
-- Your public IP address (find at whatismyip.com)
-- The server port (default: `25565`)
-- Format: `your.public.ip.address:25565`
-
-## Common issues
-
-### Server won't start
-
-If your server fails to start:
-
-- Check that Java is properly installed
-- Verify you accepted the EULA
-- Ensure the port isn't already in use
-- Check server logs for specific error messages
-
-### Players can't connect
-
-If players can't connect to your server:
-
-- Verify port forwarding is configured correctly
-- Check firewall settings aren't blocking the port
-- Confirm you're sharing the correct IP address
-- Ensure the server is running and not full
-
-### Performance issues
-
-To improve server performance:
-
-- Allocate more RAM using `-Xmx` and `-Xms` flags
-- Reduce view distance in `server.properties`
-- Limit the number of entities and mobs
-- Use server optimization plugins
-- Consider upgrading your hardware
-
-## Backup and maintenance
-
-### Creating backups
+### Backups
 
 Regularly backup your server:
 
-1. Stop the server
+1. Stop the server or use a backup plugin
 2. Copy the entire server folder to a safe location
 3. Include the `world` folder and all configuration files
-4. Restart the server
+4. Schedule automatic backups for important servers
 
-### Updating the server
+### Plugins and mods
 
-To update your Minecraft server:
+Extend your server functionality:
 
-1. Backup your current server
-2. Download the latest server `.jar` file
-3. Replace the old `.jar` file with the new one
-4. Start the server and verify everything works
+- **Bukkit/Spigot/Paper**: For plugins (recommended for most servers)
+- **Forge/Fabric**: For mods (requires client-side mods too)
+- Download plugins from trusted sources like SpigotMC or CurseForge
+- Place plugin JAR files in the `plugins` folder
+
+## Troubleshooting
+
+### Server won't start
+
+Common issues and solutions:
+
+- **Java version**: Ensure you have the correct Java version installed
+- **Port already in use**: Change the port in `server.properties`
+- **Insufficient memory**: Increase the `-Xmx` value in your start command
+- **Corrupted world**: Restore from a backup or delete the world folder
+
+### Connection issues
+
+If players can't connect:
+
+- **Firewall**: Open port 25565 (or your custom port)
+- **Port forwarding**: Configure your router to forward the server port
+- **IP address**: Share your public IP address with players
+- **Server full**: Increase `max-players` in server.properties
+
+### Performance problems
+
+If your server is lagging:
+
+- Reduce `view-distance` and `simulation-distance`
+- Use Paper or Purpur for better performance
+- Install optimization plugins like ClearLagg
+- Upgrade your server hardware or hosting plan
+- Limit entity spawning and redstone contraptions
+
+## Common commands
+
+Essential server commands:
+
+- `/whitelist add <player>`: Add player to whitelist
+- `/op <player>`: Give player operator permissions
+- `/gamemode <mode> <player>`: Change player's gamemode
+- `/tp <player> <target>`: Teleport players
+- `/give <player> <item> <amount>`: Give items to players
+- `/time set <value>`: Change the time of day
+- `/weather <clear|rain|thunder>`: Change weather
+- `/difficulty <level>`: Change difficulty
+- `/save-all`: Save the world manually
