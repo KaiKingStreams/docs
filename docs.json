@@ -12,8 +12,8 @@
     "global": {
       "tabs": [
         {
-          "tab": "Change Logs",
-          "href": ""
+          "tab": "Changelogs",
+          "href": "/changelog"
         }
       ],
       "anchors": [
