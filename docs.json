@@ -9,19 +9,22 @@
   },
   "favicon": "/logo/Logo.png",
 "navigation": {
-  "anchors": [
+  "global": {
+    "tabs": [
+      {
+        "tab": "Getting Started",
+        "href": "https://docs.darkmoonhollow.xyz/introduction"
+      }
+    ]
+  },
+  "tabs": [
     {
-      "anchor": "Untitled Anchor",
-      "tabs": [
-        {
-          "tab": "Getting Started",
-          "pages": [
-            "introduction",
-            "minecraft-server",
-            "email-issues",
-            "account-setup"
-          ]
-        }
+      "tab": "Getting Started",
+      "pages": [
+        "introduction-copied-1",
+        "minecraft-server-copied-1",
+        "email-issues-copied-1",
+        "account-setup-copied-1"
       ]
     }
   ]
