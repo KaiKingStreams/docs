@@ -90,8 +90,28 @@
       },
       {
         "tab": "Changelogs",
-        "pages": [
-          "change-logs/changelog"
+        "groups": [
+          {
+            "group": "Year",
+            "pages": [
+              {
+                "group": "2026",
+                "pages": [
+                  {
+                    "group": "Month",
+                    "pages": [
+                      {
+                        "group": "Janurary",
+                        "pages": [
+                          "change-logs/changelog"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
         ]
       }
     ]
