@@ -82,6 +82,15 @@
         ]
       },
       {
+        "tab": "Discord Bots",
+        "groups": [
+          {
+            "group": "CurseForge Updates Bot",
+            "pages": []
+          }
+        ]
+      },
+      {
         "tab": "Changelogs",
         "groups": [
           {
@@ -136,15 +145,6 @@
                 ]
               }
             ]
-          }
-        ]
-      },
-      {
-        "tab": "Discord Bots",
-        "groups": [
-          {
-            "group": "CurseForge Updates Bot",
-            "pages": []
           }
         ]
       }
