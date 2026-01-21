@@ -11,7 +11,8 @@
 "navigation": {
   "pages": [
     "account-setup",
-    "minecraft-server"
+    "minecraft-server",
+    "email-issues"
   ]
 }
 ,
