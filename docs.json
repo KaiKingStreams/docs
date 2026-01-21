@@ -11,12 +11,9 @@
 "navigation": {
   "anchors": [
     {
-      "anchor": "Untitled Anchor",
-      "tabs": [
-        {
-          "tab": "Getting Started",
-          "pages": [
-            "introduction",
+      "tab": "Getting Started",
+      "pages": [
+        "introduction",
             "minecraft-server",
             "email-issues",
             "account-setup"
