@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "almond",
+  "theme": "mint",
   "name": "DH Documentation",
   "colors": {
     "primary": "#16A34A",
@@ -9,10 +9,26 @@
   },
   "favicon": "/logo/Logo.png",
 "navigation": {
-  "pages": [
-    "account-setup",
-    "minecraft-server",
-    "email-issues"
+  "tabs": [
+    {
+      "tab": "Getting Started",
+      "pages": [
+        "introduction"
+      ]
+    },
+    {
+      "tab": "Minecraft",
+      "pages": [
+        "minecraft-server"
+      ]
+    },
+    {
+      "tab": "Website",
+      "pages": [
+        "email-issues",
+        "account-setup"
+      ]
+    }
   ]
 }
 ,
