@@ -61,7 +61,7 @@
         ]
       },
       {
-        "tab": "Darkmoon Chronicles",
+        "tab": "Darkmoon Hollow",
         "groups": [
           {
             "group": "API documentation",
@@ -81,11 +81,33 @@
         ]
       },
       {
+        "tab": "Darkmoon Chronicles",
+        "groups": [
+          {
+            "group": "API documentation",
+            "pages": [
+              "api-reference-copied-2/introduction"
+            ]
+          },
+          {
+            "group": "Endpoint examples",
+            "pages": [
+              "api-reference-copied-2/endpoint/get",
+              "api-reference-copied-2/endpoint/create",
+              "api-reference-copied-2/endpoint/delete",
+              "api-reference-copied-2/endpoint/webhook"
+            ]
+          }
+        ]
+      },
+      {
         "tab": "Discord Bots",
         "groups": [
           {
             "group": "CurseForge Updates Bot",
-            "pages": []
+            "pages": [
+              "discord-bots/curse-forge-updates-bot/instalation"
+            ]
           }
         ]
       },
