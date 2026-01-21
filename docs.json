@@ -51,5 +51,8 @@
       "website": "https://darkmoonhollow.xyz",
       "instagram": "https://www.instagram.com/darkmoon.hollow"
     }
+  },
+  "appearance": {
+    "default": "dark"
   }
 }
