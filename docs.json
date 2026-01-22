@@ -78,10 +78,6 @@
         "tab": "Changelogs",
         "groups": [
           {
-            "group": "Darkmoon Chronicles Changelogs",
-            "pages": []
-          },
-          {
             "group": "Darkmoon Hollow Website Changelogs",
             "pages": []
           },
@@ -112,12 +108,6 @@
                   "changelogs/minecraft-modpack-changelogs/darkmoon-hollow-smp/changelog"
                 ]
               }
-            ]
-          },
-          {
-            "group": "Documentation Changelogs",
-            "pages": [
-              "change-logs/site-wide-changelog"
             ]
           }
         ]
