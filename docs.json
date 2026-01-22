@@ -132,7 +132,7 @@
     "default": "dark"
   },
   "background": {
-    "decoration": "grid",
+    "decoration": "gradient",
     "color": {
       "dark": "#141414"
     }
