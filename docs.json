@@ -166,5 +166,8 @@
   "appearance": {
     "strict": true,
     "default": "dark"
+  },
+  "background": {
+    "decoration": "gradient"
   }
 }
