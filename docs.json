@@ -3,7 +3,7 @@
   "theme": "mint",
   "name": "DH • Documentation",
   "colors": {
-    "primary": "#16A34A",
+    "primary": "#4b00b4",
     "light": "#07C983",
     "dark": "#15803D"
   },
@@ -185,5 +185,9 @@
   "banner": {
     "dismissible": false,
     "content": "Test"
+  },
+  "appearance": {
+    "strict": true,
+    "default": "dark"
   }
 }
