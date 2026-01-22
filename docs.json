@@ -9,15 +9,6 @@
   },
   "favicon": "/logo/Logo.png",
   "navigation": {
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Blog",
-          "icon": "newspaper",
-          "href": "https://drakmoonchronicles.com/"
-        }
-      ]
-    },
     "tabs": [
       {
         "tab": "Guides",
