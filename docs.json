@@ -76,7 +76,8 @@
       },
       {
         "tab": "Changelogs",
-        "groups": [
+        "pages": [
+          "changelogs/site-wide-changelogs",
           {
             "group": "Minecraft Modpack Changelogs",
             "pages": [
