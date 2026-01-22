@@ -117,17 +117,7 @@
           {
             "group": "Documentation Changelogs",
             "pages": [
-              {
-                "group": "2026",
-                "pages": [
-                  {
-                    "group": "Janurary",
-                    "pages": [
-                      "change-logs/site-wide-changelog"
-                    ]
-                  }
-                ]
-              }
+              "change-logs/site-wide-changelog"
             ]
           }
         ]
