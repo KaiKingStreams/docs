@@ -4,8 +4,8 @@
   "name": "DH • Documentation",
   "colors": {
     "primary": "#4b00b4",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "light": "#4b00b4",
+    "dark": "#4b00b4"
   },
   "favicon": "/logo/Logo.png",
   "navigation": {
@@ -170,7 +170,7 @@
   "background": {
     "decoration": "gradient",
     "color": {
-      "dark": "#000000"
+      "dark": "#141414"
     }
   },
   "seo": {
