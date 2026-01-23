@@ -13,7 +13,14 @@
       {
         "tab": "Guides",
         "pages": [
-          "index"
+          "index",
+          {
+            "group": "Hosting",
+            "pages": [
+              "guides/hosting/simplistic-node",
+              "guides/partnership/bisect-hosting"
+            ]
+          }
         ]
       },
       {
@@ -31,8 +38,8 @@
       {
         "tab": "Darkmoon Hollow",
         "pages": [
-          "darkmoon-hollow/rank-structure",
-          "darkmoon-hollow/coming-soon"
+          "darkmoon-hollow/coming-soon",
+          "darkmoon-hollow/rank-structure"
         ]
       },
       {
