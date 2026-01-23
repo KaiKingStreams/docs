@@ -56,6 +56,7 @@
         "tab": "Changelogs",
         "pages": [
           "changelogs/site-wide-changelogs",
+          "changelogs/minecraft-modpack-changelogs/darkmoon-hollow-smp/dhsmp-changelog",
           {
             "group": "Minecraft Modpack Changelogs",
             "pages": [
@@ -79,9 +80,7 @@
               },
               {
                 "group": "Darkmoon Hollow SMP",
-                "pages": [
-                  "changelogs/minecraft-modpack-changelogs/darkmoon-hollow-smp/dhsmp-changelog"
-                ]
+                "pages": []
               }
             ]
           }
