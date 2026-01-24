@@ -27,9 +27,9 @@
         "tab": "Minecraft",
         "groups": [
           {
-            "group": "Darkmoon Hollow SMP Server",
+            "group": "Darkmoon Hollow SMP",
             "pages": [
-              "minecraft/darkmoon-hollow-smp-server/darkmoon-hollow-smp-mod-wiki",
+              "minecraft/darkmoon-hollow-smp/mod-wiki",
               "minecraft/darkmoon-hollow-smp-server/mods"
             ]
           }
