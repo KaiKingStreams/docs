@@ -63,12 +63,12 @@
       {
         "tab": "Changelogs",
         "pages": [
-          "changelogs/stormhold-modpack",
           "changelogs/site-wide-changelogs",
           "changelogs/sha-dragon-adventures",
           "changelogs/sha-dragon-create-adventures",
           "changelogs/darkmoon-hollow",
-          "changelogs/darkmoon-hollow-smp"
+          "changelogs/darkmoon-hollow-smp",
+          "changelogs/stormhold-modpack"
         ]
       }
     ]
