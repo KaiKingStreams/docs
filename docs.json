@@ -20,12 +20,20 @@
               "guides/hosting/bisect-hosting",
               "guides/hosting/simplistic-node"
             ]
-          }
+          },
+          "welcome/how-to-create-an-account-and-check-your-spam-folder"
         ]
       },
       {
         "tab": "Minecraft",
         "groups": [
+          {
+            "group": "Stormhold",
+            "pages": [
+              "minecraft/stormhold/stormhold-modpack-help",
+              "minecraft/stormhold/before-asking-for-help"
+            ]
+          },
           {
             "group": "Darkmoon Hollow SMP",
             "pages": [
@@ -41,12 +49,6 @@
           "darkmoon-hollow/why-we-created-darkmoon-hollow",
           "darkmoon-hollow/coming-soon",
           "darkmoon-hollow/rank-structure"
-        ]
-      },
-      {
-        "tab": "Darkmoon Chronicles",
-        "pages": [
-          "darkmoon-chronicles/coming-soon"
         ]
       },
       {
