@@ -71,6 +71,7 @@
       {
         "tab": "Changelogs",
         "pages": [
+          "changelogs/merch-changelog",
           "changelogs/site-wide-changelogs",
           "changelogs/discord-server-changelog",
           {
