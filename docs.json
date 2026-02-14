@@ -87,6 +87,12 @@
       {
         "tab": "Changelogs",
         "pages": [
+          {
+            "group": "Darkmoon Hollow RP",
+            "pages": [
+              "dhrp-website"
+            ]
+          },
           "changelogs/merch-changelog",
           "changelogs/site-wide-changelogs",
           "changelogs/discord-server-changelog",
